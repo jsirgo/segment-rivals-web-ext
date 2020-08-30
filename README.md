@@ -2,6 +2,8 @@
 Web extension to load and show in the segment tables who is the followed user with the best time in each segment.
 
 ## Build steps
+Prerequisites: Node.js
+
 Install dependencies
 ```
 npm install
