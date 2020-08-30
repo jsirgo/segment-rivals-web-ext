@@ -1,6 +1,5 @@
 import "../css/main.css"
 import { SegmentHelper } from "./helpers/SegmentHelper";
-import { DataTableHelper } from "./helpers/DataTableHelper";
 
 var userId: string;
 var lang: string;
