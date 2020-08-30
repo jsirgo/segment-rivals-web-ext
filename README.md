@@ -1,5 +1,8 @@
+[![Build Status](https://travis-ci.org/jsirgo/segment-rivals-web-ext.svg?branch=master)](https://travis-ci.org/jsirgo/segment-rivals-web-ext)
 # Segment Rivals
-Web extension to load and show in the segment tables who is the followed user with the best time in each segment.
+Web extension to load and show in Strava segment tables who is the followed user with the best time in each segment.
+
+**This extension doesn't work on users who aren't Strava Summit members**
 
 ## Build steps
 Prerequisites: Node.js

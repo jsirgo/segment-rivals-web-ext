@@ -43,9 +43,11 @@ function loadSegmentRivalsOnStarredSegments(segmentsTable: Element){
                 let segment = JSON.parse(segmentString);
                 if(segment.segmentId != null && userId != null){
                     SegmentHelper.getSegmentFriendsLeaderboard(segment.segmentId, userId).then(athleteEfforts => {
-                        let userEffort = athleteEfforts.find(athleteEffort => athleteEffort.athleteId == userId);
-                        if(userEffort != null){
-                            DataTableHelper.addDataToTable(userEffort, athleteEfforts, segmentTr, segmentsTable, lang);
+                        if(athleteEfforts.length > 0){
+                            let userEffort = athleteEfforts.find(athleteEffort => athleteEffort.athleteId == userId);
+                            if(userEffort != null){
+                                DataTableHelper.addDataToTable(userEffort, athleteEfforts, segmentTr, segmentsTable, lang);
+                            }
                         }
                     });
                 }
@@ -66,9 +68,11 @@ function loadSegmentRivalsOnMySegments(segmentsTable: Element){
                 if(segmentIdMatcherResult != null && segmentIdMatcherResult.length > 1){
                     if(segmentIdMatcherResult[1] != null && segmentIdMatcherResult[1]){
                         SegmentHelper.getSegmentFriendsLeaderboard(segmentIdMatcherResult[1], userId).then(athleteEfforts => {
-                            let userEffort = athleteEfforts.find(athleteEffort => athleteEffort.athleteId == userId);
-                            if(userEffort != null){
-                                DataTableHelper.addDataToTable(userEffort, athleteEfforts, segmentTr, segmentsTable, lang);
+                            if(athleteEfforts.length > 0){
+                                let userEffort = athleteEfforts.find(athleteEffort => athleteEffort.athleteId == userId);
+                                if(userEffort != null){
+                                    DataTableHelper.addDataToTable(userEffort, athleteEfforts, segmentTr, segmentsTable, lang);
+                                }
                             }
                         });
                     }
@@ -87,14 +91,16 @@ function loadSegmentRivalsOnActivity(segmentsTable: Element){
             SegmentHelper.getSegmentIdFromEffort(segmentEffortId).then((segmentId) => {
                 if(segmentId != null){
                     SegmentHelper.getSegmentFriendsLeaderboard(segmentId, userId).then(athleteEfforts => {
-                        let userEffort = athleteEfforts.find(athleteEffort => athleteEffort.athleteId == userId);
-                        if(userEffort == null){
-                            let loadedUserEffort = DataTableHelper.loadUserEffortFromActivityTable(userId, segmentId, athleteEfforts, segmentTr, lang);
-                            if(loadedUserEffort != null){
-                                DataTableHelper.addDataToTable(loadedUserEffort, athleteEfforts, segmentTr, segmentsTable, lang);
+                        if(athleteEfforts.length > 0){
+                            let userEffort = athleteEfforts.find(athleteEffort => athleteEffort.athleteId == userId);
+                            if(userEffort == null){
+                                let loadedUserEffort = DataTableHelper.loadUserEffortFromActivityTable(userId, segmentId, athleteEfforts, segmentTr, lang);
+                                if(loadedUserEffort != null){
+                                    DataTableHelper.addDataToTable(loadedUserEffort, athleteEfforts, segmentTr, segmentsTable, lang);
+                                }
+                            }else{
+                                DataTableHelper.addDataToTable(userEffort, athleteEfforts, segmentTr, segmentsTable, lang);
                             }
-                        }else{
-                            DataTableHelper.addDataToTable(userEffort, athleteEfforts, segmentTr, segmentsTable, lang);
                         }
                     });
                 }
