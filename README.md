@@ -24,4 +24,5 @@ Click on 'Load Temporary Add-on' and select packaged zip or manifest.json file o
 
 ## Usage
 Once on the Starred Segments page or an Activity page, click the extension icon to load the followed user who is the leader of each segment.
+
 Move the mouse over the segment leader to see the ranking of followed users.
