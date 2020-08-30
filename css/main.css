@@ -1,0 +1,61 @@
+td.rival {
+    text-align:left !important;
+}
+
+td.rival a {
+    text-decoration: none;
+}
+
+td.rival .popover__wrapper {
+    position: relative;
+    display: inline-block;
+}
+td.rival .popover__content {
+    margin-top: 1.5em;
+    font-size: 0.8em;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    right: 0px;
+    transform: translate(0, 10px);
+    background-color: #fff;
+    padding: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    width: auto;
+}
+td.rival .popover__content th {
+    white-space: nowrap;
+}
+td.rival .popover__content td {
+    white-space: nowrap;
+    text-align: left;
+}
+td.rival .popover__content td.rank {
+    text-align: right;
+}
+td.rival .popover__content td.time {
+    text-align: left !important;
+}
+td.rival .popover__content tr.athlete_record{
+    background-color: rgb(254, 219, 204) !important;
+}
+td.rival .popover__content tr:last-child td {
+    border-bottom: none;
+}
+td.rival .popover__content table {
+    width: 100%;
+    margin: 5px 0;
+}
+td.rival .popover__wrapper:hover .popover__content {
+    z-index: 10;
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, -20px);
+    transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+}
+td.rival span.diff_green {
+    color: green;
+}
+td.rival span.diff_red {
+    color: red;
+}

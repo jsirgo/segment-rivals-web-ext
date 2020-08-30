@@ -1,0 +1,35 @@
+{
+  "name": "segment-rivals",
+  "version": "1.0.0",
+  "description": "Web extension to load and show in the segment tables who is the followed user with the best time in each segment.",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "webpack",
+    "lint": "npm run build && web-ext lint --source-dir ./dist/",
+    "package": "npm run lint && web-ext build -o --source-dir ./dist/"
+  },
+  "author": "jsirgo",
+  "homepage": "https://github.com/jsirgo/segment-rivals-web-ext#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jsirgo/segment-rivals-web-ext"
+  },
+  "license": "GPL-3.0",
+  "dependencies": {
+    "axios": "^0.20.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.27",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.0.3",
+    "css-loader": "^3.2.0",
+    "style-loader": "^1.2.1",
+    "ts-loader": "^8.0.3",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.1",
+    "web-ext": "^5.0.0",
+    "webextension-polyfill-ts": "^0.19.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
