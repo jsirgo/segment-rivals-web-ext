@@ -7,9 +7,9 @@ jobs:
       - image: circleci/node:12.16
     steps:
       - checkout
-        - run: echo "Build"
-        - run: npm install
-        - run: npm run lint
+      - run: echo "Build"
+      - run: npm install
+      - run: npm run lint
 workflows:
   node-build:
     jobs:
