@@ -16,7 +16,7 @@ npm run package
 ```
 
 ## Add extension to Firefox
-Firefox don't allow to install an extension if it is not signed, but the extension can be added temporary through extensions debugging page: [about:debugging#/runtime/this-firefox](about:debugging#/runtime/this-firefox)
+Firefox don't allow to install an extension if it is not signed, but the extension can be added temporary through extensions debugging page: `about:debugging#/runtime/this-firefox`
 
 Click on 'Load Temporary Add-on' and select packaged zip or manifest.json file on dist folder.
 
