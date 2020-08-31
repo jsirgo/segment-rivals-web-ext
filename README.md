@@ -25,7 +25,23 @@ Firefox don't allow to install an extension if it is not signed, but the extensi
 
 Click on 'Load Temporary Add-on' and select packaged zip or manifest.json file on dist folder.
 
+## Add extension to Chrome
+Once on `chrome://extensions/` enable developer mode, reload the page and then drag and drop packaged zip to the page or click on 'Load unpacked' and select extension dist folder.
+
 ## Usage
 Once on the Starred Segments page or an Activity page, click the extension icon to load the followed user who is the leader of each segment.
 
+![extension icon](https://github.com/jsirgo/segment-rivals-web-ext/raw/master/screenshots/screenshot3.png)
+
+![extension column](https://github.com/jsirgo/segment-rivals-web-ext/raw/master/screenshots/screenshot1.png)
+
 Move the mouse over the segment leader to see the ranking of followed users.
+
+![extension ranking](https://github.com/jsirgo/segment-rivals-web-ext/raw/master/screenshots/screenshot2.png)
+
+## Disclaimer
+This application is released "as-is", without any warrant, responsibility, liability or support.
+All the information used in this extension is readily available in Strava website.
+
+This application is not endorsed by Strava and the development hasn´t any relation with Strava Inc.
+The term Strava is an exclusive trademark of, and owned by, Strava Inc.
