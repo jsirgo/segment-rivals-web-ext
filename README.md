@@ -41,7 +41,9 @@ Move the mouse over the segment leader to see the ranking of followed users.
 
 ## Disclaimer
 This application is released "as-is", without any warrant, responsibility, liability or support.
+
 All the information used in this extension is readily available in Strava website.
 
 This application is not endorsed by Strava and the development hasn´t any relation with Strava Inc.
+
 The term Strava is an exclusive trademark of, and owned by, Strava Inc.
