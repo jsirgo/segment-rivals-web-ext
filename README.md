@@ -31,13 +31,13 @@ Once on `chrome://extensions/` enable developer mode, reload the page and then d
 ## Usage
 Once on the Starred Segments page or an Activity page, click the extension icon to load the followed user who is the leader of each segment.
 
-![extension icon](https://github.com/jsirgo/segment-rivals-web-ext/raw/master/screenshots/screenshot3.png)
+![extension icon](https://github.com/jsirgo/segment-rivals-web-ext/raw/master/screenshots/screenshot3.jpg)
 
-![extension column](https://github.com/jsirgo/segment-rivals-web-ext/raw/master/screenshots/screenshot1.png)
+![extension column](https://github.com/jsirgo/segment-rivals-web-ext/raw/master/screenshots/screenshot1.jpg)
 
 Move the mouse over the segment leader to see the ranking of followed users.
 
-![extension ranking](https://github.com/jsirgo/segment-rivals-web-ext/raw/master/screenshots/screenshot2.png)
+![extension ranking](https://github.com/jsirgo/segment-rivals-web-ext/raw/master/screenshots/screenshot2.jpg)
 
 ## Disclaimer
 This application is released "as-is", without any warrant, responsibility, liability or support.
