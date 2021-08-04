@@ -2,7 +2,7 @@
     "description": "Load and show in Strava segment tables who is the followed user with the best time in each segment.",
     "manifest_version": 2,
     "name": "Segment Rivals",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "homepage_url": "https://github.com/jsirgo/segment-rivals-web-ext",
     "icons": {
       "48": "icons/podium48.png"
